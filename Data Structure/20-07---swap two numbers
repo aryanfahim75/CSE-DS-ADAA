@@ -1,0 +1,31 @@
+num1 = 15       # Initialize num1 with value 15
+num2 = 20       # Initialize num2 with value 20
+
+# Step 1: Add num1 and num2, store result in num1
+num1 = num1 + num2   # num1 = 15 + 20 = 35
+
+# Step 2: Subtract new num2 from updated num1 to get original num1
+num2 = num1 - num2   # num2 = 35 - 20 = 15
+
+# Step 3: Subtract new num2 (which is original num1) from updated num1 to get original num2
+num1 = num1 - num2   # num1 = 35 - 15 = 20
+
+# Now the values are swapped
+print(num1)   # Output: 20
+print(num2)   # Output: 15
+
+This code demonstrates how to swap the values of two variables (num1 and num2) without
+using a third temporary variable. It uses simple arithmetic operations (addition and subtraction)
+to achieve the swap.
+
+Initial values:
+
+num1 = 15
+
+num2 = 20
+
+After swapping:
+
+num1 = 20
+
+num2 = 15
