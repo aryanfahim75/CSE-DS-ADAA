@@ -1,0 +1,24 @@
+This Python program finds the largest number from a list entered by the user.
+First, it asks the user how many numbers they want to enter, then collects those
+numbers in a list. It assumes the first number is the largest and then compares it 
+with the rest of the numbers using a loop. If it finds a number greater than the current
+largest, it updates the largest value. Finally, it prints the largest number from the list.
+This approach uses simple logic without built-in functions like max() to help understand how 
+comparison works in loops.
+
+n = int(input("How many numbers will you enter? "))
+arr = []
+
+print("Enter the numbers one by one:")
+for i in range(n):
+    num = int(input())
+    arr.append(num)
+
+# Assume first element is the largest
+largest = arr[0]
+
+for num in arr:
+    if num > largest:
+        largest = num
+
+print("The largest number is:", largest)
