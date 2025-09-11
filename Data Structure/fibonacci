@@ -1,0 +1,64 @@
+problem: Write a C/C++ program to generate the Fibonacci series:
+         a) Using iteration (without recursion)
+         b) Using recursion
+
+Answear:--
+what is fiboncci searies?
+=>The Fibonacci series is a sequence of numbers in which each number is the sum of the two preceding ones.It starts with 0 and 1.
+ex: 0, 1, 1, 2, 3, 5, 8, 13, ….
+
+a) here the code:
+
+code:
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int first = 0, second = 1, next;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+
+    for (i = 0; i < n; i++) {
+        if (i <= 1) {
+            next = i;
+        } else {
+            next = first + second;
+            first = second;
+            second = next;
+        }
+        printf("%d ", next);
+    }
+
+    return 0;
+}
+
+
+b)here the code using recurtion:
+
+code:
+#include <stdio.h>
+
+int fibonacci(int n) {
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+int main() {
+    int n, i;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci Series: ");
+    for (i = 0; i < n; i++) {
+        printf("%d ", fibonacci(i));
+    }
+
+    return 0;
+}
+
+
