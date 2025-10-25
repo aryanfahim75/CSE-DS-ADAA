@@ -3,6 +3,8 @@ problem: Implement the linear search algorithm in C/C++.
 Linear search is the simplest searching algorithm. It works by checking 
 each element of the array one by one until the desired element is found 
 or the end of the array is reached.
+For example, if you’re searching for the number 30 in a list like [10, 20, 30, 40, 50], the program will first look at 10, then 20, then 30.
+When it matches 30, it stops and says — “found it!”
 
 code:
 #include <stdio.h>
